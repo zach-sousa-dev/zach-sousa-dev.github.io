@@ -3,9 +3,11 @@ var targetClass = "hacky-container";	//class to do the effect on
 
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";		//characters to randomize
 
-const readabilityRate = 100;		//time in ms
+const readabilityRate = 80;		//time in ms
 //for some reason the var above and below break it when equal, and idk why
 const randomRate = 50;		//time in ms
+
+const delay = 500;		//time in ms
 // ^^^PARAMETERS^^^
 
 var elements = [];
@@ -13,7 +15,6 @@ var elements = [];
 var objects = [];
 
 function randomize(object, startIndex) {
-	console.log(object);
 	var length = object.html.innerHTML.length;
 	var str = object.oldHtml;
 	for (let i = startIndex; i < length; i++) {
@@ -48,7 +49,6 @@ function setCharAt(str, index, chr) {
 
 //called on page load
 window.addEventListener("load", event => {		//run when all the files finish loading
-	console.log("page is fully loaded");
 
 	elements = document.getElementsByClassName(targetClass);
 
@@ -68,13 +68,19 @@ window.addEventListener("load", event => {		//run when all the files finish load
 });
 
 
+function startDecode() {
+	clearTimeout(startDecode);
+	setInterval(incrementStartIndex, readabilityRate);
+}
+
+
 //called after all of the objects are created
 function start() {
 	for (let i = 0; i < objects.length; i++) {
 		objects[i].interval = setInterval(randomize, randomRate, objects[i], 0, letters);
 	}
 
-	setInterval(incrementStartIndex, readabilityRate);
+	setTimeout(startDecode, delay);
 
 	//setInterval(randomize, 50, elements[0], i, letters);	//update each letter randomly every 50ms
 }
