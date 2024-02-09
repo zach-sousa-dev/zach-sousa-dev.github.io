@@ -1,0 +1,16 @@
+@font-face {
+	font-family: akira;
+	src: url(fonts/nk57.otf);
+}
+
+.title-font {
+	font-family: akira;
+}
+
+.heading-font {
+	color: #ef233c;
+	font-size: 56pt;
+	font-weight: 500;
+	user-select: none;
+	font-family: akira;
+}

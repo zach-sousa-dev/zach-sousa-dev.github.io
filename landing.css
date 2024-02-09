@@ -1,14 +1,7 @@
-@font-face {
-	font-family: akira;
-	src: url(fonts/nk57.otf);
-}
+
 
 body {
 	background-color: #2b2d42;
-}
-
-.title-font {
-	font-family: akira;
 }
 
 .landing-title {
