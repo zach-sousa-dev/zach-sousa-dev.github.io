@@ -5,9 +5,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<title>Zachary Sousa</title>
+
 	<link href="page.css" rel="stylesheet" type="text/css" />
 	<link href="text-styling.css" rel="stylesheet" type="text/css" />
+	<link href="flex.css" rel="stylesheet" type="text/css" />
 	<script src="hackerText.js"></script>
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -15,21 +18,43 @@
 
 	<div class="container">
 
-		<nav class = "round">Nav Content</nav>
-
-		<div id="heading" class = "heading-font round">
-			<div class = "hacky-container">PAGE</div>
+		<div class="round nav">
+			<!--<div id = "thing"></div>-->
+			<div id = "home-button"></div>
+			<div id = "profile-button"></div>
+			<div id = "portfolio-button"></div>
 		</div>
 
-		<div id="text1" class = "round">text1</div>
-		<div id="text2" class = "round">text2</div>
-		<div id="text3" class = "round">text3</div>
+		<div id="heading" class="heading-font round">
+			<div class="hacky-container">PORTFOLIO</div>
+		</div>
 
-		<div id="media1" class = "round">media1</div>
-		<div id="media2" class = "round">media2</div>
-		<div id="media3" class = "round">media3</div>
+		<div id="items-container" class="round">container
 
-		<footer class = "round">Footer</footer>
+			<div class="item">
+				<div class="item-title">Just Survive!</div>
+
+				<div class="item-content">
+					<div class="item-desc">
+						<em>"Just Survive!"</em> is a collaborative pet-project I've been working on with a group of friends.
+						Made in the Unity engine, it is a single player, wave and economy based, first person zombie shooter.
+						One of the first hurdles we encountered with this project was to figure out how to work on the
+						game collaboratively at the same time. We eventually were able to get a common workflow in place,
+						utilizing GitHub to host our main codebase, with 3D models and assets being shared to the developers
+						(such as myself) via online cloud hosting software. The game is still in it's early stages, but I look
+						forward to sharing it here and on my itch.io when it is complete!
+					</div>
+					<div class="item-media">
+						this will be a photo
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+
+		<footer class="round">Footer</footer>
 
 	</div>
 

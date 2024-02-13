@@ -1,0 +1,59 @@
+div {
+	padding: 5px;
+}
+
+.main-container {
+	background-color: red;
+}
+
+.main-title {
+	background-color: blue;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.item {
+	background-color: purple;
+}
+
+.item-container {
+	background-color: green;
+}
+
+.item-title {
+	background-color: teal;
+	font-size: 1.5rem;
+}
+
+.item-content {
+	background-color: brown;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.item-desc {
+	background-color: grey;
+	min-width: 50px;
+	max-width: 50%;
+}
+
+.item-media {
+	background-color: yellow;
+	min-width: 50px;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+@media only screen and (max-width: 1000px) {
+	.nav {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+		padding: 0px 0px 0px 0px;
+	}
+}

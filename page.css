@@ -4,28 +4,58 @@
 
 body {
 	background-color: #2b2d42;
-	padding: 25px 25px 25px 25px;
+	margin: 0px 20% 0px 20%;
+	padding: 50px 50px 50px 50px;
+}
+
+#profile-button {
+	background-image: url(images/profile.svg);
+	background-repeat: no-repeat;
+	background-size: 100% 80px;
+	background-position: center;
+	min-height: 80px;
+	margin: 5px 5px 5px 5px;
+}
+
+#home-button {
+	background-image: url(images/home.svg);
+	background-repeat: no-repeat;
+	background-size: 100% 80px;
+	background-position: center;
+	min-height: 80px;
+	margin: 5px 5px 5px 5px;
+}
+
+#portfolio-button {
+	background-image: url(images/portfolio.svg);
+	background-repeat: no-repeat;
+	background-size: 100% 80px;
+	background-position: center;
+	min-height: 80px;
+	margin: 5px 5px 5px 5px;
 }
 
 .container {
 	display: grid;
 	height: 150vh;
-	grid-template-columns: 0.25fr 1fr 1fr 1fr;
+	grid-template-columns: 0.4fr 1fr 1fr 1fr;
 	grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
 	grid-gap: 50px;
 
 	grid-template-areas:
 		"heading heading heading heading"
-		"nav text1 text1 media1"
-		"nav text2 text2 media2"
-		"nav text3 text3 media3"
+		"nav items-container items-container items-container"
+		"nav items-container items-container items-container"
+		"nothing items-container items-container items-container"
 		"footer footer footer footer";
 }
 
-nav {
-	background-color: #8d99ae;
+.nav {
 	grid-area: nav;
+	border: 4px solid #8d99ae;
 }
+
+
 
 #heading {
 	/*background-color: red;*/
@@ -40,34 +70,9 @@ nav {
 	vertical-align: middle;
 }
 
-#text1 {
+#items-container {
 	background-color: #8d99ae;
-	grid-area: text1;
-}
-
-#text2 {
-	background-color: #8d99ae;
-	grid-area: text2;
-}
-
-#text3 {
-	background-color: #8d99ae;
-	grid-area: text3;
-}
-
-#media1 {
-	background-color: #8d99ae;
-	grid-area: media1;
-}
-
-#media2 {
-	background-color: #8d99ae;
-	grid-area: media2;
-}
-
-#media3 {
-	background-color: #8d99ae;
-	grid-area: media3;
+	grid-area: items-container;
 }
 
 footer {
@@ -80,17 +85,45 @@ footer {
 	padding: 10px 10px 10px 10px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
 
 	.container {
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 0.5fr 0.5fr 1fr 1fr 1fr 0.5fr;
+		grid-template-rows: 0.05fr 0.25fr 1fr 1fr 1fr 0.5fr;
 		grid-template-areas:
 			"heading heading"
 			"nav nav"
-			"text1 media1"
-			"text2 media2"
-			"text3 media3"
+			"items-container items-container"
+			"items-container items-container"
+			"items-container items-container"
 			"footer footer"
+	}
+
+	#profile-button {
+		background-image: url(images/profile.svg);
+		background-repeat: no-repeat;
+		background-size: 100px 100%;
+		background-position: center;
+		min-width: 100px;
+	}
+
+	#home-button {
+		background-image: url(images/home.svg);
+		background-repeat: no-repeat;
+		background-size: 100px 100%;
+		background-position: center;
+		min-width: 100px;
+	}
+
+	#portfolio-button {
+		background-image: url(images/portfolio.svg);
+		background-repeat: no-repeat;
+		background-size: 100px 100%;
+		background-position: center;
+		min-width: 100px;
+	}
+
+	body {
+		margin: 0px 0px 0px 0px;
 	}
 }
