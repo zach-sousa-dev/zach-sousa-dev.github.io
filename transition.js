@@ -20,3 +20,5 @@ window.addEventListener("load", event => {
 	
 	setInterval(removeRed, waitTime);
 });
+
+//I didn't like this thusly am not using it.
