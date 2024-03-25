@@ -2,19 +2,56 @@
 	box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #8d99ae;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #ef233c;
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #73121d;
+}
+
 body {
 	background-color: #2b2d42;
-	margin: 0px 20% 0px 20%;
+	margin: 0px 10% 0px 10%;
 	padding: 50px 50px 50px 50px;
 }
 
+.item-title {
+	color: #ef233c;
+}
+
+.item-media iframe {
+	width: 100%;
+	height: 100%;
+}
+
+.item-media img {
+	width: 100%;
+	aspect-ratio: 16/9;
+}
+
+.item-video iframe {
+	width: 100%;
+	height: 100%;
+}
+
 #profile-button {
+	color: white;
 	background-image: url(images/profile.svg);
 	background-repeat: no-repeat;
 	background-size: 100% 80px;
 	background-position: center;
 	min-height: 80px;
-	margin: 5px 5px 5px 5px;
+	margin: 0px 0px 0px 0px;
 }
 
 #home-button {
@@ -23,7 +60,7 @@ body {
 	background-size: 100% 80px;
 	background-position: center;
 	min-height: 80px;
-	margin: 5px 5px 5px 5px;
+	margin: 0px 0px 0px 0px;
 }
 
 #portfolio-button {
@@ -32,20 +69,20 @@ body {
 	background-size: 100% 80px;
 	background-position: center;
 	min-height: 80px;
-	margin: 5px 5px 5px 5px;
+	margin: 0px 0px 0px 0px;
 }
 
 .container {
 	display: grid;
 	height: 150vh;
-	grid-template-columns: 0.4fr 1fr 1fr 1fr;
+	grid-template-columns: 0.2fr 1fr 1fr 1fr;
 	grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
 	grid-gap: 50px;
 
 	grid-template-areas:
 		"heading heading heading heading"
 		"nav items-container items-container items-container"
-		"nav items-container items-container items-container"
+		"nothing items-container items-container items-container"
 		"nothing items-container items-container items-container"
 		"footer footer footer footer";
 }
@@ -53,9 +90,22 @@ body {
 .nav {
 	grid-area: nav;
 	border: 4px solid #8d99ae;
+	min-width: 80px;
 }
 
+.item-desc {
+	font-size: 1.2rem;
+}
 
+.item-desc a {
+	text-decoration: none;
+	color: navy;
+	font-weight: bold;
+}
+
+.item-desc a:hover {
+	color: #7373d3;
+}
 
 #heading {
 	/*background-color: red;*/
@@ -71,8 +121,9 @@ body {
 }
 
 #items-container {
-	background-color: #8d99ae;
+	border: 4px solid #8d99ae;
 	grid-area: items-container;
+	overflow-y: auto;
 }
 
 footer {
@@ -85,7 +136,11 @@ footer {
 	padding: 10px 10px 10px 10px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 600px) {
+
+	.nav {
+		min-width: 0px;
+	}
 
 	.container {
 		grid-template-columns: 1fr 1fr;
