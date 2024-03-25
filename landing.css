@@ -6,7 +6,7 @@ body {
 
 .landing-title {
 	color: #ef233c;
-	font-size: 56pt;
+	font-size: 36pt;
 	font-weight: 500;
 	user-select: none;
 	text-align: center;
@@ -16,7 +16,7 @@ body {
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: #ef233c;
 	color: #2b2d42;
-	font-size: 36pt;
+	font-size: 24pt;
 	font-weight: 500;
 	user-select: none;
 	text-align: center;

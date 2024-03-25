@@ -151,13 +151,13 @@ footer {
 			"items-container items-container"
 			"items-container items-container"
 			"items-container items-container"
-			"footer footer"
+			"footer footer";
 	}
 
 	#profile-button {
 		background-image: url(images/profile.svg);
 		background-repeat: no-repeat;
-		background-size: 100px 100%;
+		background-size: 60px 60%;
 		background-position: center;
 		min-width: 100px;
 	}
@@ -165,7 +165,7 @@ footer {
 	#home-button {
 		background-image: url(images/home.svg);
 		background-repeat: no-repeat;
-		background-size: 100px 100%;
+		background-size: 60px 60%;
 		background-position: center;
 		min-width: 100px;
 	}
@@ -173,7 +173,7 @@ footer {
 	#portfolio-button {
 		background-image: url(images/portfolio.svg);
 		background-repeat: no-repeat;
-		background-size: 100px 100%;
+		background-size: 60px 60%;
 		background-position: center;
 		min-width: 100px;
 	}
