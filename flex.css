@@ -29,17 +29,18 @@ div {
 }
 
 .item-desc {
-	min-width: 50px;
+	/*min-width: 50px;*/
 	max-width: 40%;
 }
 
 .item-media {
-	width: 60%;
+	/*width: 60%;*/
+	max-width: 60%;
 	aspect-ratio: 16/9;
 }
 
 .item-video {
-	width: 45%;
+	/*width: 45%;*/
 	aspect-ratio: 16/9;
 }
 
@@ -53,11 +54,24 @@ div {
 	display: none !important;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
 	.nav {
 		display: flex;
 		justify-content: space-between;
 		flex-direction: row;
 		padding: 0px 0px 0px 0px;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.item-desc {
+		/*min-width: 50px;*/
+		max-width: 100%;
+	}
+
+	.item-media {
+		/*width: 60%;*/
+		max-width: 100%;
+		aspect-ratio: 16/9;
 	}
 }
