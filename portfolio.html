@@ -5,32 +5,147 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<title>Zachary Sousa</title>
+
 	<link href="flex.css" rel="stylesheet" type="text/css" />
+	<link href="page.css" rel="stylesheet" type="text/css" />
 	<link href="text-styling.css" rel="stylesheet" type="text/css" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="hackerText.js"></script>
 	<link rel="icon" type="image/x-icon" href="/images/ZeroDayRed.svg">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
-	<div class="main-container">
+	<div class="container">
 
-		<div class="main-title title-font">PENIS</div>
+		<div class="round nav">
+			<!--<div id = "thing"></div>-->
+			
+			<a href="home.html"><div id="home-button"></div></a>
 
-		<div class="item-container">
-			<div class="item-title">Just Survive!</div>
+			<a href="profile.html"><div id="profile-button"></div></a>
+			
+			<a href="portfolio.html"><div id="portfolio-button"></div></a>
 
-			<div class="item-content">
-				<div class="item-desc">"Just Survive!" is an economy-based shooter in which you fight hordes of zombies.</div>
-				<div class="item-media">IMAGE</div>
+		</div>
+
+		<div id="heading" class="heading-font round">
+			<div class="hacky-container">PORTFOLIO</div>
+		</div>
+
+		<div id="items-container" class="round">
+
+
+			<div class="item">
+				<div class="item-title title-font">INFRA-SIGHT<img class="arrow" src="images/left.svg"></div>
+
+				<div class="item-content">
+					<div class="item-desc">
+						<em>"Infra-Sight"</em> is a program that myself and <a href="https://eli-wood-dev.github.io">Eli Wood</a>
+						built
+						for our school's Overwatch e-sport team. Written in Node.js, it pulls relevant player stats from each player
+						on the team,
+						and displays them all in one place. This is useful to determine which players we should put in the match
+						based on their
+						skill on each role.
+					</div>
+					<div class="item-media">
+						<img src="images/infraSight.png">
+					</div>
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="item-title title-font">FRC TEAM 7509<img class="arrow" src="images/left.svg"></div>
+
+				<div class="item-content">
+					<div class="item-desc">
+						I'm on First Robotics Competition team <a href="https://www.thebluealliance.com/team/7509">7509</a>,
+						<em>"Brainstorm Robotics"</em>. Check out our robot from 2023
+						in the video! <br><br>
+						More recently, our team has installed a swerve drive base on our robot for the first time. While it was
+						quite difficult to understand at first, we were able to get a grasp of how the subsystem worked in time for
+						competition.
+						The ability to drive omnidirectionally proved useful in our 2024 McMaster competition, where we were allied
+						with
+						teams <a href="https://2056.ca/">2056</a> and <a href="https://mmrambotics.com/">2200</a> who proposed the
+						idea of using our robot defensively. Our ability to maintain our rotation
+						whilst driving left to right played a big role in our matches, and eventually our victory.
+					</div>
+					<div class="item-video">
+						<iframe src="https://www.youtube.com/embed/Ezd6YFC9xDU?si=NLyk-gCe187xs0jv" title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="item-title title-font">JUST SURVIVE!<img class="arrow" src="images/down.svg"></div>
+
+				<div class="item-content hidden">
+					<div class="item-desc">
+						<em>"Just Survive!"</em> is a collaborative pet-project I've been working on with a group of friends, including 
+						<a href="https://eli-wood-dev.github.io">Eli Wood</a>.
+						Made in the Unity engine, it is a single player, wave and economy based, first person zombie shooter, with
+						tower defense elements.
+						One of the first hurdles we encountered with this project was to figure out how to work on the
+						game collaboratively at the same time. We eventually were able to get a common workflow in place,
+						utilizing GitHub to host our main codebase, with 3D models and assets being shared to the developers
+						(such as myself) via online cloud file-hosting software. The game is still in it's early stages, but I look
+						forward to sharing it here and on my itch.io when it is complete!
+					</div>
+					<div class="item-video">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/el49XLBkd-k?si=K_MOnahuaKu1z5Uj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="item-title title-font">ROADS OF RAGE<img class="arrow" src="images/down.svg"></div>
+
+				<div class="item-content hidden">
+					<div class="item-desc">
+						<em>"Roads of Rage"</em> is an unfinished game that was being developed in Greenfoot for a class project. The project
+						was not just about making games however, which is why I am including it here despite being incomplete. The purpose
+						of the project was to gain hands on experience with agile methodologies in the development cycle. The class was broken
+						into smaller teams which each had to devote roles to the team members and coordinate between each other using Slack and
+						other collaborative technologies to design and develop a game from scratch. Unfortunately, due to time constraints at the
+						end of the semester we were unable to complete the game itself, but regardless the project taught me a lot of valuable skills.
+					</div>
+					<div class="item-media">
+						<img src="images/RoR.png">
+					</div>
+				</div>
 			</div>
 
 		</div>
 
+
+		<footer class="round">
+			<div class="socials">
+				<a href="https://www.linkedin.com/in/zach-sousa/">
+					<img src="images/in.svg">
+				</a>
+			</div>
+			<div class="socials">
+				<a href="https://github.com/zach-sousa-dev">
+					<img src="images/github.svg">
+				</a>
+			</div>
+			<div class="socials">
+				<a href="https://z4ch4ry.itch.io/">
+					<img src="images/itch.svg">
+				</a>
+			</div>
+		</footer>
+
 	</div>
 
-	<script src="script.js"></script>
-	<script src="hackerText.js"></script>
+	<script src="panelToggle.js"></script>
 </body>
 
 
