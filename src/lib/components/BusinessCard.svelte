@@ -3,22 +3,22 @@
 </script>
 
 <div class="
-    flex
+    grid
+    grid-cols-3
+    gap-4
     w-full
-    max-w-6xl
+    max-w-4xl
     items-center
     justify-center
     mt-100
 ">
 
     <div class="
-        w-1/5
-        flex
-        justify-center
+        col-start-1
+        col-span-1
     ">
         <img class="
                 rounded-full
-                max-h-80
             "
             src={props.img}
             alt="Profile icon"
@@ -27,8 +27,8 @@
     
 
     <div class="
-        w-2/5
-        flex-row
+        col-start-2
+        col-span-2
     ">
         <!--HEADER-->
         <div>
