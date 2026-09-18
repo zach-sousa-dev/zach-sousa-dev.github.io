@@ -31,12 +31,23 @@
         col-span-2
     ">
         <!--HEADER-->
-        <div>
+        <div class="
+            text-5xl
+            mb-5
+            font-header
+            text-off-white
+            border-b-4
+            border-passionate-red
+            leading-relaxed
+        ">
             Zachary Sousa
         </div>
 
         <!--BODY-->
-        <div>
+        <div <div class="
+            text-off-white
+            font-regular
+        ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis placerat mauris vel pharetra. Ut lobortis tortor leo, quis elementum nunc scelerisque iaculis. Duis eget turpis non nunc pharetra sagittis eu in sapien. Nam vestibulum ante sed metus facilisis, sed lobortis quam varius. Integer eget faucibus erat. Vestibulum vitae sodales arcu. Donec vel eleifend dui. Proin facilisis metus sit amet dui semper facilisis. Proin bibendum blandit metus vitae fringilla. Nulla id scelerisque magna. 
         </div>
 

@@ -6,4 +6,9 @@
 
 <Navbar />
 
-<BusinessCard img="https://avatars.githubusercontent.com/u/75133905?v=4"/>
+<div class="
+    flex
+    justify-center
+">
+    <BusinessCard img="https://avatars.githubusercontent.com/u/75133905?v=4"/>
+</div>
