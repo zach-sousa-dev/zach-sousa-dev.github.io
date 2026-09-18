@@ -1,3 +1,9 @@
-<h1 class="text-2xl">home</h1>
-<p>this is the home page.</p>
-<p>update</p>
+<script>
+    import Navbar from "$lib/components/Navbar.svelte";
+    import BusinessCard from "$lib/components/BusinessCard.svelte";
+    import './layout.css';
+</script>
+
+<Navbar />
+
+<BusinessCard img="https://avatars.githubusercontent.com/u/75133905?v=4"/>

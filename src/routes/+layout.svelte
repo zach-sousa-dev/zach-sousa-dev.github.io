@@ -5,11 +5,16 @@
 	let { children } = $props();
 </script>
 
-<nav>
-	<a href="/">home</a>
-	<a href="/about">about</a>
-</nav>
+<style>
+	:global(html) {
+		background-color: rgb(43, 45, 66);
+		margin: 0;
+	}
+</style>
 
-<svelte:head><link rel="icon" href={favicon} /></svelte:head>
+<svelte:head>
+	<link rel="icon" href={favicon} />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</svelte:head>
 
 {@render children()}
