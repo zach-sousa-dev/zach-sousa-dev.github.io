@@ -8,7 +8,7 @@
 
 <div class="
     flex
-    justify-center
+    flex-col
 ">
-    <BusinessCard img="https://avatars.githubusercontent.com/u/75133905?v=4"/>
+    <BusinessCard topMargin=90 img="https://avatars.githubusercontent.com/u/75133905?v=4"/>
 </div>

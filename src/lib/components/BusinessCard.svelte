@@ -1,61 +1,71 @@
 <script>
-    let props = $props();
+    let { img, topMargin = 90 } = $props();
+    
 </script>
 
 <div class="
-    grid
-    grid-cols-3
-    gap-4
-    w-full
-    max-w-4xl
-    items-center
+    flex
     justify-center
-    mt-100
 ">
-
     <div class="
-        col-start-1
-        col-span-1
+        grid
+        grid-cols-3
+        gap-4
+        w-full
+        max-w-4xl
+        items-center
+        justify-center
+        mt-{topMargin}  //TODO: fix, component renders before the class is resolved, so the margin is 0. 
     ">
-        <img class="
-                rounded-full
-            "
-            src={props.img}
-            alt="Profile icon"
-        >
-    </div>
-    
 
-    <div class="
-        col-start-2
-        col-span-2
-    ">
-        <!--HEADER-->
         <div class="
-            text-5xl
-            mb-5
-            font-header
-            text-off-white
-            border-b-4
-            border-passionate-red
-            leading-relaxed
+            col-start-1
+            col-span-1
         ">
-            Zachary Sousa
+            <img class="
+                    rounded-full
+                "
+                src={img}
+                alt="Profile icon"
+            >
         </div>
+        
 
-        <!--BODY-->
-        <div <div class="
-            text-off-white
-            font-regular
+        <div class="
+            col-start-2
+            col-span-2
         ">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis placerat mauris vel pharetra. Ut lobortis tortor leo, quis elementum nunc scelerisque iaculis. Duis eget turpis non nunc pharetra sagittis eu in sapien. Nam vestibulum ante sed metus facilisis, sed lobortis quam varius. Integer eget faucibus erat. Vestibulum vitae sodales arcu. Donec vel eleifend dui. Proin facilisis metus sit amet dui semper facilisis. Proin bibendum blandit metus vitae fringilla. Nulla id scelerisque magna. 
+            <!--HEADER-->
+            <div class="
+                text-5xl
+                mb-5
+                font-header
+                text-off-white
+                border-b-4
+                border-passionate-red
+                leading-relaxed
+            ">
+                Zachary Sousa
+            </div>
+
+            <!--BODY-->
+            <div <div class="
+                text-off-white
+                font-regular
+            ">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis placerat mauris vel pharetra. Ut lobortis tortor leo, quis elementum nunc scelerisque iaculis. Duis eget turpis non nunc pharetra sagittis eu in sapien. Nam vestibulum ante sed metus facilisis, sed lobortis quam varius. Integer eget faucibus erat. Vestibulum vitae sodales arcu. Donec vel eleifend dui. Proin facilisis metus sit amet dui semper facilisis. Proin bibendum blandit metus vitae fringilla. Nulla id scelerisque magna. 
+            </div>
+
+            <!--FOOTER-->
+            <div class="
+                flex
+                justify-start
+            ">
+                <div>Icon</div>
+                <div>Icon</div>
+                <div>Icon</div>
+                {topMargin}
+            </div>
         </div>
-
-        <!--FOOTER-->
-        <div>
-
-        </div>
-
     </div>
-
 </div>
