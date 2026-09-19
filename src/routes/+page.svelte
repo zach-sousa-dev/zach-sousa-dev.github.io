@@ -10,5 +10,5 @@
     flex
     flex-col
 ">
-    <BusinessCard topMargin=90 img="https://avatars.githubusercontent.com/u/75133905?v=4"/>
+    <BusinessCard topMargin="mt-90" img="https://avatars.githubusercontent.com/u/75133905?v=4"/>
 </div>

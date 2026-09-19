@@ -1,6 +1,5 @@
 <script>
-    let { img, topMargin = 90 } = $props();
-    
+    let { img, topMargin = "mt-90" } = $props();
 </script>
 
 <div class="
@@ -15,7 +14,7 @@
         max-w-4xl
         items-center
         justify-center
-        mt-{topMargin}  //TODO: fix, component renders before the class is resolved, so the margin is 0. 
+        {topMargin}  //TODO: fix, component renders before the class is resolved, so the margin is 0. 
     ">
 
         <div class="
