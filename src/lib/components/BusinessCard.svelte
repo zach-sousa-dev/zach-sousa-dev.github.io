@@ -1,5 +1,5 @@
 <script>
-    let { img, topMargin = "mt-90" } = $props();
+    let { img, topMargin = "mt-90", children, body, header } = $props();
 </script>
 
 <div class="
@@ -44,7 +44,7 @@
                 border-passionate-red
                 leading-relaxed
             ">
-                Zachary Sousa
+                {header}
             </div>
 
             <!--BODY-->
@@ -52,7 +52,7 @@
                 text-off-white
                 font-regular
             ">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis placerat mauris vel pharetra. Ut lobortis tortor leo, quis elementum nunc scelerisque iaculis. Duis eget turpis non nunc pharetra sagittis eu in sapien. Nam vestibulum ante sed metus facilisis, sed lobortis quam varius. Integer eget faucibus erat. Vestibulum vitae sodales arcu. Donec vel eleifend dui. Proin facilisis metus sit amet dui semper facilisis. Proin bibendum blandit metus vitae fringilla. Nulla id scelerisque magna. 
+                {body}
             </div>
 
             <!--FOOTER-->
@@ -60,10 +60,7 @@
                 flex
                 justify-start
             ">
-                <div>Icon</div>
-                <div>Icon</div>
-                <div>Icon</div>
-                {topMargin}
+                {@render children?.()}
             </div>
         </div>
     </div>
