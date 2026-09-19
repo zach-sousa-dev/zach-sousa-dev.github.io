@@ -4,11 +4,15 @@
     import './layout.css';
 </script>
 
-<Navbar />
+<Navbar>
+    <a href="/">About</a>
+    <a href="/">Services</a>
+    <a href="/">Portfolio</a>
+</Navbar>
 
 <div class="
     flex
     flex-col
 ">
-    <BusinessCard topMargin="mt-90" img="https://avatars.githubusercontent.com/u/75133905?v=4"/>
+    <BusinessCard topMargin="mt-90" img="https://avatars.githubusercontent.com/u/75133905?v=4" />
 </div>

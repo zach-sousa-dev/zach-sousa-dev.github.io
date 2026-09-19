@@ -1,3 +1,7 @@
+<script>
+    let { children } = $props();
+</script>
+
 <nav class="
     backdrop-blur-md
     border-off-white
@@ -22,9 +26,5 @@
     left-1/2
     -translate-x-1/2
 ">
-
-	<a href="/">About</a>
-	<a href="/">Services</a>
-    <a href="/">Portfolio</a>
-
+    {@render children?.()}
 </nav>

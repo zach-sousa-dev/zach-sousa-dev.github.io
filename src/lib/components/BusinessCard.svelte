@@ -14,7 +14,7 @@
         max-w-4xl
         items-center
         justify-center
-        {topMargin}  //TODO: fix, component renders before the class is resolved, so the margin is 0. 
+        {topMargin} 
     ">
 
         <div class="
