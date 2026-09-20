@@ -1,5 +1,5 @@
 <script>
-    let { children, img, link } = $props();
+    let { img, link } = $props();
 </script>
 
 <div class="
