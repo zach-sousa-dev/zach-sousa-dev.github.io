@@ -6,6 +6,7 @@
 @theme {
     --color-blue-gray: rgb(43, 45, 66);
     --color-passionate-red: rgb(239, 35, 60);
+    --color-highlight-red: rgb(248, 168, 178);
     --color-off-white: rgb(230, 230, 230);
     --color-translucent-black: rgba(0, 0, 0, 0.2);
     --font-header: "Stack Sans Notch", sans-serif;
