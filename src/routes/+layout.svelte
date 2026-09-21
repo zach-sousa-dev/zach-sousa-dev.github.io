@@ -8,7 +8,6 @@
 <style>
 	:global(html) {
 		background-color: rgb(43, 45, 66);
-		margin: 0;
 	}
 </style>
 
@@ -17,4 +16,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </svelte:head>
 
-{@render children()}
+<div class="flex justify-center">
+	<div class="flex-col justify-center w-2/3 max-w-4xl">
+		{@render children()}
+	</div>
+</div>

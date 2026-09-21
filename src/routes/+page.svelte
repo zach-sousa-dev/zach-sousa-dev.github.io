@@ -21,59 +21,55 @@
     })
 </script>
 
+
+
 <Navbar>
     <a href="\" use:scrollTo={'about'}>About</a>
     <a href="\" use:scrollTo={'services'}>Services</a>
     <a href="\" use:scrollTo={'portfolio'}>Portfolio</a>
 </Navbar>
 
-<div 
-    class="
-        flex
-        flex-col
-    "
->
-
-    <section use:scrollRef={'about'}>
-        <BusinessCard 
-            topMargin="mt-90" 
-            img="https://avatars.githubusercontent.com/u/75133905?v=4"
-            header="Zachary Sousa"
-            body="I've just recently completed the P-TECH program that I was fortunately a part of during my experience at SNP Secondary School (formerly SNP STEAM Academy) and Mohawk College. I've since transferred to another Software Development program at Mohawk!"
-        >
-            <SocialIcon img={linkedIn} link="https://www.linkedin.com/in/zach-sousa/" />
-            <SocialIcon img={gitHub} link="https://github.com/zach-sousa-dev" />
-            <SocialIcon img={mail} link="mailto:zacharysousa@outlook.com?subject=I found your website!" />
-        </BusinessCard>
-
-        <br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br>
-    </section>
 
 
-    <section use:scrollRef={'services'}>
-
-        <Header>Services</Header>
-        <br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br>
-
-    </section>
-
-    <section use:scrollRef={'portfolio'}>
-
-        <Header>Portfolio</Header>
-        <br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br>
-
-    </section>
+<section use:scrollRef={'about'}>
+    <BusinessCard 
+        topMargin="mt-90" 
+        img="https://avatars.githubusercontent.com/u/75133905?v=4"
+        header="Zachary Sousa"
+        body="I've just recently completed the P-TECH program that I was fortunately a part of during my experience at SNP Secondary School (formerly SNP STEAM Academy) and Mohawk College. I've since transferred to another Software Development program at Mohawk!"
+    >
+        <SocialIcon img={linkedIn} link="https://www.linkedin.com/in/zach-sousa/" />
+        <SocialIcon img={gitHub} link="https://github.com/zach-sousa-dev" />
+        <SocialIcon img={mail} link="mailto:zacharysousa@outlook.com?subject=I found your website!" />
+    </BusinessCard>
 
     <br><br><br><br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+</section>
 
 
-</div>
+<section use:scrollRef={'services'}>
+
+    <Header>Services</Header>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+
+</section>
+
+<section use:scrollRef={'portfolio'}>
+
+    <Header>Portfolio</Header>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+
+</section>
+
+<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
+
+
