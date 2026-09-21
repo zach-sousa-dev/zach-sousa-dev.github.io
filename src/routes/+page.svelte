@@ -16,10 +16,12 @@
     <a href="/">Portfolio</a>
 </Navbar>
 
-<div class="
-    flex
-    flex-col
-">
+<div 
+    class="
+        flex
+        flex-col
+    "
+>
     <BusinessCard 
         topMargin="mt-90" 
         img="https://avatars.githubusercontent.com/u/75133905?v=4"
