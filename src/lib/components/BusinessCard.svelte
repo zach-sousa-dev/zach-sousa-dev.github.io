@@ -1,5 +1,6 @@
 <script>
     let { img, topMargin = "mt-90", children, body, header } = $props();
+    import Header from "$lib/components/Header.svelte";
 </script>
 
 <div class="
@@ -35,17 +36,9 @@
             col-span-2
         ">
             <!--HEADER-->
-            <div class="
-                text-5xl
-                mb-5
-                font-header
-                text-off-white
-                border-b-4
-                border-passionate-red
-                leading-relaxed
-            ">
+            <Header>
                 {header}
-            </div>
+            </Header>
 
             <!--BODY-->
             <div <div class="

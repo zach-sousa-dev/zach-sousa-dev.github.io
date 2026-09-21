@@ -8,6 +8,7 @@
     import mail from "$lib/assets/mail.svg";
 
     import './layout.css';
+    import Header from "$lib/components/Header.svelte";
 </script>
 
 <Navbar>
