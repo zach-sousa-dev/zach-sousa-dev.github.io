@@ -9,6 +9,7 @@
     --color-highlight-red: rgb(248, 168, 178);
     --color-off-white: rgb(230, 230, 230);
     --color-translucent-black: rgba(0, 0, 0, 0.2);
+    --color-near-opaque-black: rgba(0, 0, 0, 0.8);
     --font-header: "Stack Sans Notch", sans-serif;
     --font-regular: "Stack Sans Text", sans-serif;
 }

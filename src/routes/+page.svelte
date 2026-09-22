@@ -12,12 +12,21 @@
     import print from "$lib/assets/3d-print.png";
     import game from "$lib/assets/gaming.png";
 
+    import justSurvive from "$lib/assets/just-survive.png";
+    import roadsOfRage from "$lib/assets/roads-of-rage.png";
+    import infrasight from "$lib/assets/infrasight.png";
+    import fighter from "$lib/assets/fighter.png";
+    import frc from "$lib/assets/frc.png";
+    import cyberpatriot from "$lib/assets/cyberpatriot.png";
+
     import './layout.css';
 
     import { scrollTo, scrollRef, scrollTop, setGlobalOptions } from 'svelte-scrolling'
 
     import { expoOut } from 'svelte/easing'
     import Card from "$lib/components/Card.svelte";
+    import Project from "$lib/components/Project.svelte";
+    import Projects from "$lib/components/Projects.svelte";
 
     // page scroll options
     setGlobalOptions({
@@ -55,7 +64,7 @@
 
 <section use:scrollRef={'services'} class="h-dvh flex items-center">
 
-    <div>
+    <div class="w-full">
         <Header>I can...</Header>
     
         <div class="flex justify-around">
@@ -87,8 +96,50 @@
 
 <section use:scrollRef={'portfolio'} class="h-dvh flex items-center">
 
-    <div>
-        <Header>Portfolio</Header>
+    <div class="w-full">
+
+        <Header>Behold! My stuff.</Header>
+
+        <Projects>
+
+            <Project
+                img={fighter}
+                title="A Platform Fighter With Only 2 Moves*"
+                href="#"
+            />
+
+            <Project
+                img={justSurvive}
+                title="Just Survive!"
+                href="#"
+            />
+            
+            <Project
+                img={roadsOfRage}
+                title="Roads of Rage"
+                href="#"
+            />
+            
+            <Project
+                img={infrasight}
+                title="Infrasight"
+                href="#"
+            />
+
+            <Project
+                img={frc}
+                title="FIRST® Robotics Team 7509"
+                href="#"
+            />
+
+            <Project
+                img={cyberpatriot}
+                title="CYBERPATRIOT"
+                href="#"
+            />
+            
+        </Projects>
+
     </div>
 
 </section>
