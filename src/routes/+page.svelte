@@ -8,11 +8,16 @@
     import gitHub from "$lib/assets/github.svg";
     import mail from "$lib/assets/mail.svg";
 
+    import code from "$lib/assets/code.png";
+    import print from "$lib/assets/3d-print.png";
+    import game from "$lib/assets/gaming.png";
+
     import './layout.css';
 
     import { scrollTo, scrollRef, scrollTop, setGlobalOptions } from 'svelte-scrolling'
 
     import { expoOut } from 'svelte/easing'
+    import Card from "$lib/components/Card.svelte";
 
     // page scroll options
     setGlobalOptions({
@@ -32,6 +37,7 @@
 
 
 <section use:scrollRef={'about'}>
+
     <BusinessCard 
         topMargin="mt-90" 
         img="https://avatars.githubusercontent.com/u/75133905?v=4"
@@ -43,33 +49,41 @@
         <SocialIcon img={mail} link="mailto:zacharysousa@outlook.com?subject=I found your website!" />
     </BusinessCard>
 
-    <br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br>
 </section>
 
 
 <section use:scrollRef={'services'}>
 
-    <Header>Services</Header>
-    <br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br>
+    <Header>I can...</Header>
+    
+    <div class="flex justify-around">
+    
+        <Card 
+            img={code}
+            subtitle="BUILD A"
+            title="Website"
+        />
+
+        <Card 
+            img={print}
+            subtitle="FABRICATE A"
+            title="3D Print"
+        />
+
+        <Card 
+            img={game}
+            subtitle="DEVELOP A"
+            title="Video Game"
+        />
+
+    </div>
 
 </section>
 
 <section use:scrollRef={'portfolio'}>
 
     <Header>Portfolio</Header>
-    <br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br>
 
 </section>
-
-<br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br>
 
 

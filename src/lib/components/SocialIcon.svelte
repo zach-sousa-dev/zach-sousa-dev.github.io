@@ -1,6 +1,6 @@
 <script>
     import { Tween } from "svelte/motion"; 
-    import { elasticOut } from 'svelte/easing'
+    import { elasticOut } from 'svelte/easing';
 
     let { img, link } = $props();
 
