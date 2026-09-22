@@ -36,10 +36,10 @@
 
 
 
-<section use:scrollRef={'about'}>
+<section use:scrollRef={'about'} class="h-dvh flex items-center">
 
     <BusinessCard 
-        topMargin="mt-90" 
+        topMargin="mt-0" 
         img="https://avatars.githubusercontent.com/u/75133905?v=4"
         header="Zachary Sousa"
         body="I've just recently completed the P-TECH program that I was fortunately a part of during my experience at SNP Secondary School (formerly SNP STEAM Academy) and Mohawk College. I've since transferred to another Software Development program at Mohawk!"
@@ -52,37 +52,44 @@
 </section>
 
 
-<section use:scrollRef={'services'}>
 
-    <Header>I can...</Header>
+<section use:scrollRef={'services'} class="h-dvh flex items-center">
+
+    <div>
+        <Header>I can...</Header>
     
-    <div class="flex justify-around">
-    
-        <Card 
-            img={code}
-            subtitle="BUILD A"
-            title="Website"
-        />
+        <div class="flex justify-around">
+        
+            <Card 
+                img={code}
+                subtitle="BUILD A"
+                title="Website"
+            />
 
-        <Card 
-            img={print}
-            subtitle="FABRICATE A"
-            title="3D Print"
-        />
+            <Card 
+                img={print}
+                subtitle="FABRICATE A"
+                title="3D Print"
+            />
 
-        <Card 
-            img={game}
-            subtitle="DEVELOP A"
-            title="Video Game"
-        />
+            <Card 
+                img={game}
+                subtitle="DEVELOP A"
+                title="Video Game"
+            />
 
+        </div>
     </div>
 
 </section>
 
-<section use:scrollRef={'portfolio'}>
 
-    <Header>Portfolio</Header>
+
+<section use:scrollRef={'portfolio'} class="h-dvh flex items-center">
+
+    <div>
+        <Header>Portfolio</Header>
+    </div>
 
 </section>
 
