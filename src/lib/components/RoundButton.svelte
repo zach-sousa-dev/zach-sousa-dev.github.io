@@ -2,22 +2,27 @@
     import { Tween } from "svelte/motion"; 
     import { elasticOut } from 'svelte/easing';
 
-    let { img, link } = $props();
+    let { img, clickAction } = $props();
 
     let progress = new Tween(1, {
         duration: 600,
         easing: elasticOut
     });
+
+    let lastTarget = 1;
     
 </script>
 
 <div class="
-    mr-5
-    mt-5
     select-none
     inline-block
 ">
-        <a href={link} target="_blank" 
+        <a href={"#"} target="_blank" 
+
+        onclick={(e) => {
+            e.preventDefault();
+            clickAction;
+        }}
 
         onmouseenter={() => {
             progress.target = 1.2
@@ -25,6 +30,15 @@
         
         onmouseleave={() => {
             progress.target = 1
+        }}
+        
+        onmousedown={() => {
+            lastTarget = progress.target;
+            progress.target = 0.8
+        }}
+
+        onmouseup={() => {
+            progress.target = lastTarget;
         }}
 
         style='transform: scale({progress.current})'

@@ -28,6 +28,7 @@
     import Project from "$lib/components/Project.svelte";
     import Projects from "$lib/components/Projects.svelte";
     import BigButton from "$lib/components/BigButton.svelte";
+    import CareerController from "$lib/components/CareerController.svelte";
 
     // page scroll options
     setGlobalOptions({
@@ -152,6 +153,10 @@
 
         </Projects>
 
+        <BigButton href="https://github.com/zach-sousa-dev" icon={gitHub} classes="mt-5">
+            MORE ON GITHUB
+        </BigButton>
+
     </div>
 
 </section>
@@ -161,7 +166,9 @@
 <section use:scrollRef={'career'} class="h-dvh flex items-center">
 
     <div class="w-full">
-        <Header>My career (up to now)</Header>
+        <Header>My career timeline (up to now).</Header>
+        <br>
+        <CareerController/>
     </div>
 
 </section>
