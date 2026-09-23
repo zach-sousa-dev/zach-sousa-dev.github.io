@@ -42,6 +42,7 @@
     <a href="\" use:scrollTo={'about'}>About</a>
     <a href="\" use:scrollTo={'services'}>Services</a>
     <a href="\" use:scrollTo={'portfolio'}>Portfolio</a>
+    <a href="\" use:scrollTo={'career'}>Career</a>
 </Navbar>
 
 
@@ -142,9 +143,25 @@
                 title="CYBERPATRIOT"
                 href="#"
             />
-            
+
+            <Project
+                img="https://avatars.githubusercontent.com/u/75133905?v=4"
+                title="zach-sousa-dev.github.io"
+                href="#"
+            />
+
         </Projects>
 
+    </div>
+
+</section>
+
+
+
+<section use:scrollRef={'career'} class="h-dvh flex items-center">
+
+    <div class="w-full">
+        <Header>My career (up to now)</Header>
     </div>
 
 </section>
