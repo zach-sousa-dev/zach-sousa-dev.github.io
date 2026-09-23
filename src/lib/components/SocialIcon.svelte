@@ -15,6 +15,7 @@
     mr-5
     mt-5
     select-none
+    inline-block
 ">
         <a href={link} target="_blank" 
 

@@ -8,13 +8,14 @@
         duration: 600,
         easing: elasticOut
     });
+
+    let lastTarget = 1;
     
 </script>
 
 <div class="
-    mr-5
-    mt-5
     select-none
+    inline-block
 ">
         <a href={"#"} target="_blank" 
 
@@ -29,6 +30,15 @@
         
         onmouseleave={() => {
             progress.target = 1
+        }}
+        
+        onmousedown={() => {
+            lastTarget = progress.target;
+            progress.target = 0.8
+        }}
+
+        onmouseup={() => {
+            progress.target = lastTarget;
         }}
 
         style='transform: scale({progress.current})'
