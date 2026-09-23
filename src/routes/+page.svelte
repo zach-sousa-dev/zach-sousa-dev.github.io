@@ -152,6 +152,10 @@
 
         </Projects>
 
+        <BigButton href="https://github.com/zach-sousa-dev" icon={gitHub} classes="mt-5">
+            MORE ON GITHUB
+        </BigButton>
+
     </div>
 
 </section>
@@ -161,7 +165,7 @@
 <section use:scrollRef={'career'} class="h-dvh flex items-center">
 
     <div class="w-full">
-        <Header>My career (up to now)</Header>
+        <Header>My career (up to now).</Header>
     </div>
 
 </section>
