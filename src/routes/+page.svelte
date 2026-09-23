@@ -27,6 +27,7 @@
     import Card from "$lib/components/Card.svelte";
     import Project from "$lib/components/Project.svelte";
     import Projects from "$lib/components/Projects.svelte";
+    import BigButton from "$lib/components/BigButton.svelte";
 
     // page scroll options
     setGlobalOptions({
@@ -88,6 +89,10 @@
             />
 
         </div>
+
+        <BigButton href="mailto:zacharysousa@outlook.com?subject=Service Request: <details here>" icon={mail} classes="mt-5">
+            REQUEST A SERVICE
+        </BigButton>
     </div>
 
 </section>
