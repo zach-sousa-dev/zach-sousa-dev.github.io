@@ -72,7 +72,7 @@
     <div class="w-full">
         <Header>I can...</Header>
     
-        <div class="flex justify-around">
+        <div class="flex justify-around flex-wrap md:flex-nowrap">
         
             <Card 
                 img={code}
@@ -168,7 +168,7 @@
 <section use:scrollRef={'career'} class="h-dvh flex items-center">
 
     <div class="w-full">
-        <Header>My career timeline (up to now).</Header>
+        <Header>My career timeline</Header>
         <br>
         <CareerController infos={infos}/>
     </div>

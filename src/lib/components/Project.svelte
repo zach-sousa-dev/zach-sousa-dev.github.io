@@ -14,7 +14,10 @@
 <div class="
         font-regular
         text-black
-        h-50
+        h-20
+        w-20
+        md:h-50
+        md:w-50
         aspect-square
     "
 >
@@ -50,6 +53,8 @@
                     rounded-2xl
                     text-center
                     p-5
+                    invisible
+                    md:visible
                 "
                 style="opacity: {progress.current};"
             >

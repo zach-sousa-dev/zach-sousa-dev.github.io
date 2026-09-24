@@ -16,7 +16,8 @@
         target="_blank" 
         class="
             font-regular
-            text-2xl
+            text-xl
+            md:text-2xl
             pt-5
             pb-5
             flex
@@ -45,7 +46,6 @@
         {#if icon}
             <img src="{icon}" alt="" class="
                     w-8
-                    ml-5
                     mr-5
                 "
             >

@@ -3,7 +3,8 @@
 </script>
 
 <div class="
-        text-5xl
+        text-3xl
+        md:text-5xl
         mb-5
         pr-20
         font-header

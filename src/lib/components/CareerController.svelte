@@ -38,11 +38,13 @@
     "
 >
 
-    <span class="font-regular text-translucent-black">C:\code\career_timeline&gt; start.bat<br>Initializing...<br>&gt;</span>
+    <span class="font-regular text-translucent-black text-sm">C:\code\career_timeline&gt; start.bat<br>Initializing...<br>&gt;</span>
 
     <div class="
             mt-10
             flex
+            flex-col
+            md:flex-row
             justify-left
             items-center
         "
@@ -53,6 +55,7 @@
                 h-25
                 inline-block
                 shrink-0
+                m-5
             "
             
         >
@@ -68,12 +71,11 @@
                 text-off-white
                 font-regular
                 inline-block
-                ml-10
                 flex-1
             "
         >
             <div class="
-                    text-2xl
+                    md:text-2xl
                 "
             >
                 {infos[selected].name}

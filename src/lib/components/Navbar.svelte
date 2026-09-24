@@ -8,12 +8,15 @@
     bg-translucent-black
     border-t
     border-l
+    flex
     flex-row
     md:flex
     justify-around
-    w-2/3
-    max-w-4xl
-    text-3xl
+    w-11/12
+    md:w-2/3
+    md:max-w-4xl
+    text-xl
+    md:text-3xl
     p-3
     rounded-full
     text-off-white

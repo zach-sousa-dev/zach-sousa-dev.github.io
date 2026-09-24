@@ -17,7 +17,7 @@
 </svelte:head>
 
 <div class="flex justify-center">
-	<div class="flex-col justify-center w-2/3 max-w-4xl">
+	<div class="flex-col justify-center md:w-2/3 max-w-4xl p-10">
 		{@render children()}
 	</div>
 </div>

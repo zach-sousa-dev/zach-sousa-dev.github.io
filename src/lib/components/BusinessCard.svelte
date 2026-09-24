@@ -5,7 +5,7 @@
 
 
 <div class="
-    grid
+    md:grid
     grid-cols-3
     gap-4
     w-full
