@@ -60,8 +60,10 @@
         ">
 
             <img src={img} alt="icon button" class="
-                h-12
-                w-12
+                w-6
+                h-6
+                md:h-12
+                md:w-12
             "/>
 
         </a>
