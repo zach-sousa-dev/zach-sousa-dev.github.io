@@ -13,16 +13,18 @@
     
 </script>
 
+<!-- svelte-ignore a11y_click_events_have_key_events -->
+<!-- svelte-ignore a11y_no_static_element_interactions -->
 <div class="
-    select-none
-    inline-block
-">
+        select-none
+        inline-block
+    "
+    onclick={(e) => {
+        e.preventDefault();
+        clickAction();
+    }}
+>
         <a href={"#"} target="_blank" 
-
-        onclick={(e) => {
-            e.preventDefault();
-            clickAction;
-        }}
 
         onmouseenter={() => {
             progress.target = 1.2

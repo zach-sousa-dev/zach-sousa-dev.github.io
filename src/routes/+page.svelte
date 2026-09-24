@@ -29,6 +29,8 @@
     import Projects from "$lib/components/Projects.svelte";
     import BigButton from "$lib/components/BigButton.svelte";
     import CareerController from "$lib/components/CareerController.svelte";
+    
+    import infos from "$lib/assets/infos.json"
 
     // page scroll options
     setGlobalOptions({
@@ -168,7 +170,7 @@
     <div class="w-full">
         <Header>My career timeline (up to now).</Header>
         <br>
-        <CareerController/>
+        <CareerController infos={infos}/>
     </div>
 
 </section>

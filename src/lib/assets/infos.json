@@ -1,0 +1,78 @@
+[
+    {
+        "name": "SNP STEAM Academy - OSSD",
+        "year": "2020",
+        "description": "In 2020, I began my highschool experience at Six Nations Polytechnic STEAM Academy (now known as Six Nations Polytechnic Secondary School). During my studies, I enrolled in the P-TECH program, which allowed me to take college courses along side my highschool courses - as well as gave me the chance to earn summer placements at IBM.",
+        "img": "snp"
+    },
+
+    {
+        "name": "Mohawk College - SWE Technician Diploma",
+        "year": "2021",
+        "description": "I began working on my Software Engineering Technician Diploma at Mohawk as part of the P-TECH program.",
+        "img": "mohawk"
+    },
+
+    {
+        "name": "IBM - P-TECH Internship Level 1",
+        "year": "2023",
+        "description": "Managed a team of interns researching and developing strategies to improve recruitment and talent retention strategies at IBM, resulting in a presentation given to a large audience of IBMers. In order to be eligible for the level 2 internship, I had to meet a set of required both technical and non-technical expectations during my level 1 internship - I succeeded.",
+        "img": "ibm"
+    },
+
+    {
+        "name": "Graduated SNP STEAM Academy",
+        "year": "2024",
+        "description": "I graduated SNP STEAM with honors!",
+        "img": "snp"
+    },
+
+    {
+        "name": "IBM - P-TECH Internship Level 2",
+        "year": "2024",
+        "description": "Worked in a self-directed team of interns focused on building a Node.js REST API utilizing the Express framework as part of a greater full-stack web app. The API needed to support incoming requests from a React frontend, and interface with a MySQL database. Due to each of the three web-app technologies (frontend, API, database) being developed at the same time, our team played an instrumental role in communicating with the other teams to ensure all of the connections were integrated correctly. My prior understanding of JavaScript proved useful during the course of the internship and allowed me to expand my capabilities to support the frameworks used on the project.",
+        "img": "ibm"
+    },
+
+    {
+        "name": "IBM - SAP Special Projects Co-op",
+        "year": "2024",
+        "description": "During my time on the Special Projects team I firstly Used prompt engineering and document collections to create AI driven new-hire onboarding assistants. Secondly, Instantiated local Large Language Models connected to a custom frontend via API. Lastly, Designed an easily accessible internal webpage (leveraging IBM's w3 intranet) to onboard new members of the SAP practice. I worked alongside several other co-ops as well as received mentoring and guidance from IBM project leads. During this time, I was able to gain an applicable level of understanding with training LLMs and strengthen my collaborative ability by building upon my comfortability with Agile methodologies.",
+        "img": "ibm"
+    },
+
+    {
+        "name": "Graduated Mohawk College",
+        "year": "2025",
+        "description": "I graduated from my Software Engineering Technician program with honors, an \"Outstanding Achievement Award\", and \"Excellence in Perseverance and Dedication to their P-TECH Studies\" certificate.",
+        "img": "mohawk"
+    },
+
+    {
+        "name": "IBM - Project Lead Co-op",
+        "year": "2025",
+        "description": "At the tail end of my co-op term, my team was notified that members of the new 2025 group of P-TECH interns for the summer would be joining our team, and that we were to guide them through developing a website to host information and FAQs about the P-TECH program as a whole. The four of us co-ops on the team would be project leads, in charge of gauging scope and ensuring the project was on track. This was a new experience for me as; despite taking unofficial leadership roles within existing teams previously, I've not been placed in a designated lead or management role before. I gained a lot of valuable experience from this job, from creating realistic timelines to dealing with difficult situations involving specific team members. I was also able to develop my technical skills since certain aspects of the project were more involved than what the interns could handle on their own. This meant I was able to also take a bit of a mentor role when difficulties or new-to-them technologies came up on the interns' side. ",
+        "img": "ibm"
+    },
+
+    {
+        "name": "Mohawk College - SWE Development Diploma",
+        "year": "2025",
+        "description": "I began working on my Software Development Diploma at Mohawk.",
+        "img": "mohawk"
+    },
+
+    {
+        "name": "SNPSS - 3D Printing",
+        "year": "2026",
+        "description": "SNP Secondary School was looking for a refresher on making use of their fleet of 3D printers as well as for me to conduct any needed maintenance to ensure the printers were operable. During this time I wrote a comprehensive guide on slicing using Ultimaker Cura to ensure that the staff and students had an easy-to-follow step-by-step instruction booklet to lower the barrier to entry for any newcomers looking to use the printers. Additionally I updated the Raspberry PI's (running Klipper firmware) connected to Creality Ender 6 machines to be hosted on the school's updated WiFi network. I also made sure to test out the several Ender 3s to identify and troubleshoot any problems that may impede their printing capabilities. Finally, over the course of 3 days I conducted training sessions with the staff to build a stronger understanding of the process overall that can be built upon and shared amongst the students.",
+        "img": "snp"
+    },
+
+    {
+        "name": "Medic - SW Developer Co-op",
+        "year": "2026",
+        "description": "At Ideaworks MEDIC (applied-research team inside Mohawk College), I worked on a team in which we developed an Android interface as well as mobility functionality to be integrated with a semi-autonomous service robot. These robots are intended to be deployed in retirement homes and hospitals.",
+        "img": "mohawk"
+    }
+]
